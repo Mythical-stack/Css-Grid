@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Grid</title>
+	<style>
+		.wrapper{
+			display: grid;
+			grid-template-columns:70% 30% ;
+			/*
+			grid-column-gap:1em;  
+			grid-row-gap:1em; 
+			*/
+			grid-gap: 1em;
+		}
+
+		.wrapper > div{
+			background: #eee;
+			padding: 1em;
+		}
+        .wrapper > div:nth-child(odd){
+        	background: #ddd;
+        }
+	</style>
+</head>
+<body>
+  <div class="wrapper">
+     <div>
+     	Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph.
+     </div>
+     <div>
+     	Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph.
+     </div>
+     <div>
+     	Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph.
+     </div>
+
+     <div>
+     	Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph.
+     </div>
+     <div>Hello</div>
+  </div>
+</body>
+</html>
